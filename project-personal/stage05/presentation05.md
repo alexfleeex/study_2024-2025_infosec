@@ -1,7 +1,7 @@
 ---
 ## Front matter
 lang: ru-RU
-title: Презентация к лабораторной работе №2
+title: Презентация к 5 этапу индивидуального проекта
 author: Ермолаев А.М.
 group: НПМбд-01-21
 
@@ -16,72 +16,160 @@ header-includes:
  - '\makeatother'
 aspectratio: 43
 section-titles: true
+marp: true
+backgroundColor: #16c9e0
+
+---
+<style>
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+
+# Презентация к 5 этапу индивидуального проекта
 ---
 
-# Презентация к лабораторной работе №2
+## Цель работы: приобрести практический навык по использованию инструмента Burp Suite - набора мощных инструментов безопасности веб-приложений.
 
-# Цель работы
+![w:650 center](images/aim.png)
 
-Цель работы: изучить идеологию и применение средств контроля версий и освоить умения по работе с git.
-![s](aim.png)
+---
 
 # Выполнение работы
 
-## Регистрация на сайте https://github.com
-![s](s1.png)
+---
 
-## Установка git-flow в Fedora Linux при помощи консольных команд.  
-![s](s2.png)
+## Запуск сервисов
 
-## Установка конфигурации  
+![w:1000 center](images/s1_start_services.png)
 
-![s](s3.png)
+---
 
-![s](s4.png)
+## Запуск Barp Suite
 
-## Создание ssh ключа и добавление его в персональные настройки.  
+![center](images/s2_burpsuite_start.png)
 
-![s](s5.png)
+---
 
-![s](s6.png)
+## Настройки проекта
 
+![center](images/s3_in_memory.png)
 
-## Создание gpg ключа и добавление его в персональные настройки.
+---
+## Настройки проекта
 
-![s](s7.png)
+![center](images/s4_default.png)
 
-![s](s8.png)
+---
 
-![s](s9.png)
+## Настойка браузера
 
-![s](s10.png)
+![center](images/s5_network_settings.png)
 
-## Настройка автоматических подписи коммитов git.
+---
+## Настойка браузера
 
-![s](s11.png)
+![center](images/s6_proxy.png)
 
-## Авторизация и настройка gh с  получением специального токена.
+---
 
-![s](s12.png)
+## Настройки в Burp Suite
 
-## Работа с локальным репозиторием (создание каталога, создание глобального репозитория по шаблону и клонирование глобального репозитория в локальный)
+![cneter](images/s7_bulp_proxy.png)
 
-![s](s13.png)
+---
 
-![s](s14.png)
+## Внедрение Burp Suite
 
-![s](s15.png)
+![center](images/s8_intercept_on.png)
 
-## Изменения и первый коммит
+---
 
-![s](s16.png)
+## Изменение переменных браузера
 
-![s](s17.png)
+![center w:10000](images/s9_hijacking.png)
+
+---
+
+## Перехваченный запрос
+
+![center w:1000](images/s10_first_try.png)
+
+---
+
+## Загрузка страницы
+
+![center](images/s11_forward.png)
+
+---
+
+## Раздел Target
+
+![center](images/s12_target.png)
+
+---
+
+## Перехват отправки формы
+
+![center](images/s13_login_password.png)
+
+---
+
+## Попытка подбора логина и пароля
+
+![center](images/s16_bomb.png)
+
+---
+
+## Подбор логина
+
+![center](images/s17_logins.png)
+
+---
+
+## Подбор пароля
+
+![center w:600](images/s18_passwords.png)
+
+---
+
+## Имитация атаки
+
+![center](images/s19_attack.png)
+
+---
+
+## Имя скрипта
+
+![center](images/s20_ok.png)
+
+---
+
+## Вкладка Repeater
+
+![center w:70%](images/s21_repeater.png)
+
+---
+
+## Разметка страницы авторизации
+
+![center](images/s23_response.png)
+
+---
+
+## Раздел Render
+
+![center](images/s24_render.png)
+
+---
 
 # Вывод
-## В рамках выполнения работы я изучил идеологию и применение средств контроля версий и освоил умения по работе с git.
+## В рамках выполнения работы я приобрел практический навык по использованию инструмента Burp Suite - набора мощных инструментов безопасности веб-приложений.
 
-![s](conclusion.png)
+![center](images/conclusion.png)
 
+---
 # Финал
-![s](final.png)
+
+![w:750 center](images/final.png)
